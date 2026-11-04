@@ -16,7 +16,7 @@ for ax, channel, name, cmap in zip(axes[1:], channels, ["Red", "Green", "Blue"],
 for ax in axes: ax.axis("off")
 fig.tight_layout()
 out = ROOT / "outputs"
-out.mkdir(exist_ok=True)
+out.mkdir(exist_ok=
 fig.savefig(out / "image_representation_channels.png", dpi=150)
 Image.fromarray(gray).save(out / "grayscale_image.jpg")
 print(f"Dimensions: {image.width} x {image.height}")
